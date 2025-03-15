@@ -1,0 +1,28 @@
+GET http://localhost:5295/games/2
+
+###
+POST http://localhost:5295/games/
+Content-Type: application/json
+
+  {
+    "Name": "The Witcher 2: Assassins of Kings",
+    "GenreId": 12,
+    "Price": 29.99,
+    "ReleaseDate": "2015-05-19"
+  }
+
+###
+
+PUT http://localhost:5295/games/1
+Content-Type: application/json
+
+  {
+    "Name": "God of War",
+    "Genre": "Action",
+    "Price": 49.99,
+    "ReleaseDate": "2018-04-20"
+  }
+
+###
+
+DELETE http://localhost:5295/games/7
